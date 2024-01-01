@@ -3,7 +3,7 @@ import { useDataContext } from "../context/Data";
 import { Link } from "react-router-dom";
 
 function HistoryDetails() {
-  const { items, removeItem } = useDataContext();
+  const { items} = useDataContext();
   const { historyId } = useParams();
   const history = items.find((item) => item.id = historyId);
   console.log(history)
